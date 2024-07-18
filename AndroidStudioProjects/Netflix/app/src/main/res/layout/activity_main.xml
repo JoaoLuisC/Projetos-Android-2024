@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#535252"
+    android:backgroundTint="#535252"
+    android:scrollbarStyle="insideOverlay"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerRelativeLayout"
+        android:layout_width="417dp"
+        android:layout_height="80dp"
+        android:background="#E50914"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/titleVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/mainNameVideo"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerRelativeLayout" />
+
+    <ImageView
+        android:id="@+id/arrowDownImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/arrow_down_desc"
+        app:layout_constraintEnd_toEndOf="@+id/titleVideo"
+        app:layout_constraintStart_toStartOf="@+id/titleVideo"
+        app:layout_constraintTop_toBottomOf="@+id/titleVideo"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <TextView
+        android:id="@+id/episodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mainEpVideo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/titleVideo"
+        app:layout_constraintStart_toStartOf="@+id/titleVideo"
+        app:layout_constraintTop_toBottomOf="@+id/arrowDownImageView" />
+
+    <VideoView
+        android:id="@+id/mainVideo"
+        android:layout_width="412dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/episodeTextView" />
+
+    <SeekBar
+        android:id="@+id/currentViewBar"
+        android:layout_width="244dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="48dp"
+        android:progressTint="@color/red"
+        android:thumbTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainVideo" />
+
+    <TextView
+        android:id="@+id/timeElapsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainVideo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="17dp"
+        android:padding="8dp"
+        android:text="@string/inicialTime"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/currentViewBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainVideo" />
+
+    <TextView
+        android:id="@+id/timeTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainVideo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:text="@string/inicialTime"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currentViewBar"
+        app:layout_constraintTop_toBottomOf="@+id/mainVideo" />
+
+    <Button
+        android:id="@+id/btnTrabalho2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/buttomName1"
+        app:layout_constraintEnd_toStartOf="@+id/btnTrabalho4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTrabalho4" />
+
+    <Button
+        android:id="@+id/btnTrabalho4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/buttomName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTrabalho2"
+        app:layout_constraintTop_toBottomOf="@+id/buttomPlay" />
+
+
+    <ImageButton
+        android:id="@+id/buttomVideoConfig"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/video_config_button_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttomPlay"
+        app:layout_constraintTop_toTopOf="@+id/buttomPlay"
+        app:srcCompat="@drawable/video" />
+
+    <ImageButton
+        android:id="@+id/buttomBackVideo"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/back_video_button_desc"
+        app:layout_constraintEnd_toStartOf="@+id/buttomPlay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttomPlay"
+        app:srcCompat="@drawable/back" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="buttomBackVideo,buttomPlay,buttomVideoConfig" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierNextLayouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="btnTrabalho4,btnTrabalho2" />
+
+    <ImageButton
+        android:id="@+id/buttomPlay"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/play_button_desc"
+        app:layout_constraintEnd_toStartOf="@+id/buttomVideoConfig"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttomBackVideo"
+        app:layout_constraintTop_toBottomOf="@+id/currentViewBar"
+        app:srcCompat="@drawable/play_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

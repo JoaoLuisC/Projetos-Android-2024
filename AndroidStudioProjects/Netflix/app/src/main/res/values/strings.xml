@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Netflix</string>
+
+    <string name="mainNameVideo">Parangolé</string>
+    <string name="mainEpVideo">T01:E01</string>
+
+    <string name="inicialTime">00:00</string>
+
+    <string name="buttomName1">Trabalho 02</string>
+    <string name="buttomName3">Trabalho 03</string>
+    <string name="buttomName2">Trabalho 04</string>
+
+
+    <string name="arrow_down_desc">Seta para baixo indicando episodio</string>
+    <string name="play_button_desc">Botão de Iniciar e pausar Video</string>
+    <string name="video_config_button_desc">Configuração de video e legendas</string>
+    <string name="back_video_button_desc">Botão de Retroceder 10 segundos no video</string>
+
+
+
+
+    <string name="textTitle_1">Constraint Layout Atividade 3</string>
+
+
+    <string name="headerTitle">Melhor Texto</string>
+    <string name="textParagraf1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eros mi, posuere eu egestas id, congue in velit. Proin vitae magna turpis. Pellentesque dictum nulla mattis, maximus arcu at, posuere elit.
+    </string>
+    <string name="textParagraf2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eros mi, posuere eu egestas id, congue in velit. Proin vitae magna turpis. Pellentesque dictum nulla mattis, maximus arcu at, posuere elit. Maecenas eget iaculis odio. Vestibulum vel velit accumsan, varius lacus ut, aliquam ex. Morbi nec eros mauris.
+    </string>
+
+    <string name="textBTN1">Esquerda</string>
+    <string name="textBTN2">Empate</string>
+    <string name="textBTN3">Direita</string>
+
+
+    <string name="appNameTrabalho2">Constraint Layout Atividade 1</string>
+    <string name="headerTrabalho2">Utilizando Imagens no Android</string>
+
+    <string name="dateTrabalho2">17/04/2029</string>
+    <string name="nameTrabalho2">João Luís Cardoso</string>
+
+    <string name="textTrabalho2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor facilisis neque, vel fermentum nulla molestie sodales. Nulla elementum cursus tortor, et rutrum turpis mollis vel. Morbi eu est vel lorem sagittis tincidunt quis sed sem. Sed egestas eget velit ut feugiat.</string>
+
+    <string name="textBTN1Trabalho2">Anterior</string>
+    <string name="textBTN2Trabalho2">Proximo</string>
+    <string name="imgTrabalho2_desc">Imagem do Android na frente de computadores\n</string>
+
+
+</resources>
