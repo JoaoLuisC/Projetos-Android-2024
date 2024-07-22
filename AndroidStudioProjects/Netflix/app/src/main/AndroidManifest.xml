@@ -23,6 +23,8 @@
 
         <activity android:name=".Trabalho02Activity" />
         <activity android:name=".Trabalho04Activity" />
+        <activity android:name=".NetflixActivity" />
+
 
     </application>
 

@@ -4,11 +4,13 @@
     <string name="mainNameVideo">Parangolé</string>
     <string name="mainEpVideo">T01:E01</string>
 
-    <string name="inicialTime">00:00</string>
+    <string name="inicialTime">01:32</string>
+    <string name="finalTime">05:00</string>
 
     <string name="buttomName1">Trabalho 02</string>
     <string name="buttomName3">Trabalho 03</string>
     <string name="buttomName2">Trabalho 04</string>
+    <string name="btnBackToMenu">Voltar</string>
 
 
     <string name="arrow_down_desc">Seta para baixo indicando episodio</string>
@@ -46,6 +48,7 @@
     <string name="textBTN1Trabalho2">Anterior</string>
     <string name="textBTN2Trabalho2">Proximo</string>
     <string name="imgTrabalho2_desc">Imagem do Android na frente de computadores\n</string>
+    <string name="descriptionImageNetflix">Video da musica: Perna Bamba</string>
 
 
 </resources>

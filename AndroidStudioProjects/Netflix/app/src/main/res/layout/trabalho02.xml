@@ -49,25 +49,15 @@
         tools:ignore="TextSizeCheck" />
 
     <Button
-        android:id="@+id/btnAnterior"
+        android:id="@+id/btnBackToMenu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:ellipsize="start"
-        android:text="@string/textBTN1Trabalho2"
-        app:layout_constraintEnd_toStartOf="@+id/btnProx"
-        app:layout_constraintHorizontal_bias="0.804"
+        android:text="@string/btnBackToMenu"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <Button
-        android:id="@+id/btnProx"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="@string/textBTN2Trabalho2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnAnterior" />
 
     <TextView
         android:id="@+id/TextName"
